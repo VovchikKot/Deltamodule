@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="akf.cs" />
+    <Compile Include="FindMaxValue.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
