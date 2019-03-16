@@ -51,7 +51,7 @@ namespace Deltamodule
             ReadandWriteSomeBytes RWriteSomeBytes = new ReadandWriteSomeBytes();
             BitArray bitfromfile = RWriteSomeBytes.ReadSomeDataFromFile(direcopen, Convert.ToInt16(textBox2.Text));
             Akf akfforbits = new Akf();
-            int[] ResultofAkf = new int[bitfromfile.Length / 8];
+            int[] ResultofAkf = new int[bitfromfile.Length];
             ResultofAkf = akfforbits.shifter(bitfromfile, shift.Right);
             int[] graph = new Int32[bitfromfile.Length];
             for (int i = 0; i < bitfromfile.Length; i++)

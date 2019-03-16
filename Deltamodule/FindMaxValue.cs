@@ -9,11 +9,11 @@ namespace Deltamodule
     class FindMaxValue
 
     {
-        public int findMax(int[] inArayy)
+        public int FindMax(int[] inArayy)
         {
 
 
-
+            
             return 1;
 
         }

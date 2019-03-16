@@ -31,35 +31,40 @@ namespace Deltamodule
                 count1++;
             }
 
-            int [] R = new Int32[inArray.Length]; 
+            int  [] R = new int[inArray.Length]; 
 
             if (shiftside == shift.Right)
             {
-                for (int j = inArray.Length - 1; j >= 0; j--)
+                for (int j = 0; j < inArray.Length; j++)
                 {
-                    int r = 0;
+
                     bool last = inArray[inArray.Length - 1];
-                    for (int i = 0; i < inArray.Length - 1; i++)
+
+                    for (int i = 0; i < inArray.Length-1; i++)
+                       
                     {
                         inBitArray[i + 1] = inArray[i];
                     }
 
                     inBitArray[0] = last;
-                    int count = 0;
+
+                    int r = 0;
+                    for (int i = 0; i < inArray.Length; i++)
+                    {
+
+                        if (inBitArrayWithoutShift[i] == inBitArray[i])
+                        {
+                            r++;
+                        }
+
+                        int count = 0;
                     foreach (bool value in inBitArray)
                     {
                         inArray[count] = value;
                         count++;
                     }
 
-                    r = 0;
-                    for (int i = 0; i < inArray.Length; i++)
-                    {
-
-                        if (inBitArrayWithoutShift[i] == inArray[i])
-                        {
-                            r++;
-                        }
+                   
                     }
 
                     R[j] = r;
