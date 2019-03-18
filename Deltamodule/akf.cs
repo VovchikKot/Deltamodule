@@ -9,13 +9,13 @@ using System.Windows.Forms;
 namespace Deltamodule
 
 {
+    // Upaded version to 1.0
     public enum shift
     {
         Right,
         Left
     }
     class Akf
-
     {
        public int [] shifter(BitArray inArray, shift shiftside )
         {
