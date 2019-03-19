@@ -13,9 +13,9 @@ namespace Deltamodule
         public int countOK = 0;
         public double [] ContiniousSearchInBitArray(BitArray inBitArray, int minvalue, int maxvalue)
         {
-            double [] resultofsearsh = new double[maxvalue-minvalue]; 
+            double [] resultofsearsh = new double[maxvalue+minvalue]; 
 
-            for (int i = minvalue; i <= maxvalue; i++)
+            for (int i = minvalue; i < maxvalue; i++)
                 {
                 countOK = 0;
                 for (int k = minvalue; k <=i; k++)

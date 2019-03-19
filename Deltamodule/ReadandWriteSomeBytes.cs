@@ -13,7 +13,7 @@ namespace Deltamodule
         {
             string openName = fileopename;
             FileStream StreamReaderfordata = new FileStream(openName,FileMode.OpenOrCreate);
-            byte [] SomeData = new byte[maxperiod/8];
+            byte [] SomeData = new byte[maxperiod/8+1];
             StreamReaderfordata.Read(SomeData, 0, SomeData.Length);
             StreamReaderfordata.Close();
             BitArray fileopendatainbits = new BitArray(SomeData);
