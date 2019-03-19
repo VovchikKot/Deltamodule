@@ -18,7 +18,7 @@ namespace Deltamodule
             for (int i = minvalue; i <= maxvalue; i++)
                 {
                 countOK = 0;
-                for (int k = 0; k < i; k++)
+                for (int k = minvalue; k <=i; k++)
                         {
                             if (inBitArray[k]==inBitArray[i+k])
                             {
@@ -27,7 +27,7 @@ namespace Deltamodule
                         
                         }
 
-                    resultofsearsh[i] = countOK / i;
+                    resultofsearsh[i] = (double)countOK / i;
                 }
 
             return resultofsearsh;

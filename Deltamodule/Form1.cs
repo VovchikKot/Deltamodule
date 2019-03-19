@@ -48,24 +48,40 @@ namespace Deltamodule
             //
             #endregion
 
-            ReadandWriteSomeBytes RWriteSomeBytes = new ReadandWriteSomeBytes();
-            BitArray bitfromfile = RWriteSomeBytes.ReadSomeDataFromFile(direcopen, Convert.ToInt16(textBox2.Text));
-            Akf akfforbits = new Akf();
-            int[] ResultofAkf = new int[bitfromfile.Length];
-            ResultofAkf = akfforbits.shifter(bitfromfile, shift.Right);
-            int[] graph = new Int32[bitfromfile.Length];
-            for (int i = 0; i < bitfromfile.Length; i++)
-            {
-                graph[i] = i;
-            }
+            #region ReadWriteSomeDataFromFile
 
-            chart1.ChartAreas[0].AxisX.MinorGrid.Interval = 1;
-            chart1.Series[0].Points.DataBindXY(graph, ResultofAkf);
-            
+
+
+
+            //ReadandWriteSomeBytes RWriteSomeBytes = new ReadandWriteSomeBytes();
+            //BitArray bitfromfile = RWriteSomeBytes.ReadSomeDataFromFile(direcopen, Convert.ToInt16(textBox2.Text));
+            //Akf akfforbits = new Akf();
+            //int[] ResultofAkf = new int[bitfromfile.Length];
+            //ResultofAkf = akfforbits.shifter(bitfromfile, shift.Right);
+            //int[] graph = new Int32[bitfromfile.Length];
+            //for (int i = 0; i < bitfromfile.Length; i++)
+            //{
+            //    graph[i] = i;
+            //}
+
+            //chart1.ChartAreas[0].AxisX.MinorGrid.Interval = 1;
+            //chart1.Series[0].Points.DataBindXY(graph, ResultofAkf);
+
             //BitArray inverseArray = new BitArray(bitfromfile.Length);
             //RWriteSomeBytes.WriteSomeDataInFile();
             //Z = 12;
+            #endregion
 
+            #region test firstContiniousSearch
+
+            ReadandWriteSomeBytes RWriteSomeBytes = new ReadandWriteSomeBytes();
+            BitArray bitfromfile = RWriteSomeBytes.ReadSomeDataFromFile(direcopen, Convert.ToInt16(textBox2.Text)*2);
+            ContiniousSearch firstContiniousSearch = new ContiniousSearch();
+            double [] masresult =new double[Convert.ToInt16(textBox2.Text)-Convert.ToInt16(textBox1.Text)];
+            masresult = firstContiniousSearch.ContiniousSearchInBitArray(bitfromfile, Convert.ToInt16(textBox1.Text), Convert.ToInt16(textBox2.Text));
+              
+
+            #endregion
         }
 
         private void button2_Click(object sender, EventArgs e)
