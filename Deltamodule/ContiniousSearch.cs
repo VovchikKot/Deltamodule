@@ -11,28 +11,26 @@ namespace Deltamodule
     class ContiniousSearch
     {
         public int countOK = 0;
-        public BitArray ContiniousSearchInBitArray(BitArray inBitArray, int minvalue, int maxvalue)
+        public double [] ContiniousSearchInBitArray(BitArray inBitArray, int minvalue, int maxvalue)
         {
-            
+            double [] resultofsearsh = new double[maxvalue-minvalue]; 
 
             for (int i = minvalue; i <= maxvalue; i++)
                 {
-                    for (int j = 1; j <=2*i; j++)
-                    {
-                        for (int k = 1; k <= i; k++)
+                countOK = 0;
+                for (int k = 0; k < i; k++)
                         {
-                            if (inBitArray[j]==inBitArray[i+1])
+                            if (inBitArray[k]==inBitArray[i+k])
                             {
                                 countOK++;
                             }
                         
                         }
-                        
-                    }
 
-
+                    resultofsearsh[i] = countOK / i;
                 }
 
+            return resultofsearsh;
 
         }
 
