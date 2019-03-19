@@ -13,6 +13,8 @@ namespace Deltamodule
 {
     public partial class Form1 : Form
     {
+        
+
         private int z=0;
         public string direcopen;
         public string direcsave;
@@ -74,24 +76,32 @@ namespace Deltamodule
 
             #region test firstContiniousSearch
 
-            ReadandWriteSomeBytes RWriteSomeBytes = new ReadandWriteSomeBytes();
-            BitArray bitfromfile = RWriteSomeBytes.ReadSomeDataFromFile(direcopen, Convert.ToInt16(textBox2.Text)*2);
-            ContiniousSearch firstContiniousSearch = new ContiniousSearch();
-            double [] masresult =new double[Convert.ToInt16(textBox2.Text)-Convert.ToInt16(textBox1.Text)];
-            masresult = firstContiniousSearch.ContiniousSearchInBitArray(bitfromfile, Convert.ToInt16(textBox1.Text), Convert.ToInt16(textBox2.Text));
-            int [] rs = new int[masresult.Length];
+            //ReadandWriteSomeBytes RWriteSomeBytes = new ReadandWriteSomeBytes();
+            //BitArray bitfromfile = RWriteSomeBytes.ReadSomeDataFromFile(direcopen, Convert.ToInt16(textBox2.Text)*2);
+            //ContiniousSearch firstContiniousSearch = new ContiniousSearch();
+            //double [] masresult =new double[Convert.ToInt16(textBox2.Text)-Convert.ToInt16(textBox1.Text)];
+            //masresult = firstContiniousSearch.ContiniousSearchInBitArray(bitfromfile, Convert.ToInt16(textBox1.Text), Convert.ToInt16(textBox2.Text));
+            //int [] rs = new int[masresult.Length];
            
-            int[] graph = new int[masresult.Length];
+            //int[] graph = new int[masresult.Length];
 
-            for (int i = 0; i < masresult.Length; i++)
+            //for (int i = 0; i < masresult.Length; i++)
+            //{
+            //    graph[i] = i;
+            //}
+            //chart1.Series[0].Points.DataBindXY(graph, masresult);
+
+           #endregion
+
+            bool x ;
+            unsafe
             {
-                graph[i] = i;
+               FormVisualisator.VisibleViewer(true);
             }
 
-            //chart1.ChartAreas[0].AxisX.MinorGrid.Interval = 1;
-            chart1.Series[0].Points.DataBindXY(graph, masresult);
 
-            #endregion
+            
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
