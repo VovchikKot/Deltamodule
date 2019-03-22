@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deltamodule", "Deltamodule\Deltamodule.csproj", "{9C5A1623-8699-4084-BB9D-EC084992E8FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlLibrary1", "WpfControlLibrary1\WpfControlLibrary1.csproj", "{F2F9EF7C-FD6C-4633-8768-C60CF5FCBD56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9C5A1623-8699-4084-BB9D-EC084992E8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C5A1623-8699-4084-BB9D-EC084992E8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C5A1623-8699-4084-BB9D-EC084992E8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F9EF7C-FD6C-4633-8768-C60CF5FCBD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F9EF7C-FD6C-4633-8768-C60CF5FCBD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F9EF7C-FD6C-4633-8768-C60CF5FCBD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F9EF7C-FD6C-4633-8768-C60CF5FCBD56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

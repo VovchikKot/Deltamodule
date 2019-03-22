@@ -59,7 +59,7 @@ namespace Deltamodule
         public static extern void OpenFlashTimy(string x);
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
-        public static extern void GranatViewerShow(string x);
+        public static extern void GranatViewerShow();
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
         public static extern void GranatViewerHide(string x);
@@ -74,16 +74,17 @@ namespace Deltamodule
         public static extern void GranatChangeTopOnMaxViewer(string x);
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
-        public static extern void GranatCloseViewer(string x);
+        public static extern void GranatCloseViewer();
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
         public static extern void SetupInCadrDpoRegim(string x);
+
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
-        public static extern void GranatVisibleViewer(string x);
+        public static extern void GranatVisibleViewer();
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
-        public static extern void GranatChangeDeltaViewer(string x);
+        public static extern void GranatChangeDeltaViewer();
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
         public static extern void CalculBitGroupErrorHide(string x);
@@ -98,7 +99,7 @@ namespace Deltamodule
         public static extern void WindowsPosViewerTable(string x);
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
-        public static extern void NotRedrawAndRun(string x);
+        public static extern void NotRedrawAndRun();
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
         public static extern void ProbaProc(string x);
@@ -125,7 +126,7 @@ namespace Deltamodule
         public static extern void PosViewerTA(string x);
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
-        public static extern void LoadWindowsViewerTA(string x);
+        public static extern void LoadWindowsViewerTA();
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
         public static extern void LoadWindowsPosUnicViewer(string x);
@@ -140,7 +141,7 @@ namespace Deltamodule
         public static extern void CopyAndCutMassiveInViewer(string x);
         [DllImport("GraView.dll", CallingConvention = CallingConvention.StdCall,
             CharSet = CharSet.Ansi)]
-        public static extern void ComStrCreateViewer(string x);
+        public static extern void ComStrCreateViewer();
       
         
 

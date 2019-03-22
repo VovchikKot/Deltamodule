@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Controls;
 
 namespace Deltamodule
 {
@@ -19,6 +20,7 @@ namespace Deltamodule
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Form1 deltaforma = new Form1(args[0], args[1]);
+            //qwe myqwerty =new qwe();
             Application.Run(deltaforma);
             return deltaforma.Z;
         }
